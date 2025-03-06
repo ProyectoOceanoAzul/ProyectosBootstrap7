@@ -288,34 +288,44 @@ div.s4row3 div div div img{
 
 
 
+/*pie*/
+footer.contenedor__footerautor{
+    background-color: var(--colorEstilo1);
+}
 
+div.pie__titulo {
+    padding: 2px 0;
+}
 
+div.pie__titulo p{
+    text-align: center;
+    font-size: 14px;
+    padding: 10px 0;
+    margin: 10px 0;
 
+    color: var(--colorEstilo39);
+}
 
+span.autor
+{
+    color: var(--colorEstilo39);
+    font-weight: 600;
+}
 
+span.donacion a
+{
+    color: var(--colorEstilo39);
+    font-weight: 600;
+}
 
-
-
-
+span.donacion a:hover{
+    text-decoration: underline;
+}
 
 
 
 
 /*Adaptable (Responsive)*/
-@media screen and (max-width: 800px)
-{
-
-
-}
-
-
-@media screen and (max-width: 800px)
-{
-
-
-}
-
-
 @media screen and (max-width: 992px)
 {
     /*****************************************/
@@ -378,22 +388,10 @@ div.s4row3 div div div img{
         margin-top: 20px;
     }
 
-
 }
 
 
 
-
-
-
-
-
-
-
-@media screen and (max-width: 700px)
-{
-
-}
 
 
 @media screen and (max-width: 576px)
@@ -426,40 +424,6 @@ div.s4row3 div div div img{
     }
 
 
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
