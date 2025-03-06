@@ -1,0 +1,1346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadatos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Gerson Nery">
+    <meta name="description" content="Portafolio de desarrollo web de Gerson Nery">
+    <meta name="keywords" content="HTML, CSS, JavaScript, React">
+
+    <!-- Bootstrap -->
+    <!-- CDN via jsDelivr -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- Iconos Bootstrap CDN -->
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Font -->
+
+
+    <!-- enlace para icnos de fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- css -->
+    <link rel="stylesheet" href="./css/estilos.css">
+
+    <!-- favicon-->
+    <link rel="icon" href="./imagenes/icon.png" type="image/x-icon">
+    <!-- titulo -->
+    <title>Proyecto Bootstrap</title>
+
+</head>
+
+<body>
+
+
+    <!-- Menu -->
+    <header class="contenedor__header ">
+
+        <nav class="navbar navbar-dark bg-dark fixed-top ">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="./imagenes/logocody.svg" alt=""> Proyectos 93R50N
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Proyectos Corporativos</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Catálogo</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Proyectos
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item small text-primary" href="#seccion1">Proyecto #1</a>
+                                    </li>
+                                    <li><a class="dropdown-item small text-success" href="#seccion2">Proyecto #2</a>
+                                    </li>
+                                    <li><a class="dropdown-item small text-warning" href="#seccion3">Proyecto #3</a>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item small text-info" href="#seccion4">Proyecto #4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+    <!-- Banner -->
+    <section class="contenedor__banner">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div id="carouselExampleCaptions" class="carousel slide">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./imagenes/banner1.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <h5 class="fw-bold">Proyecto #1</h5>
+                                    <p>Professional Corporate Langing Page for Business</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/banner2.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <h5 class="fw-bold">Proyecto #2</h5>
+                                    <p>Welcome to Onekit Develop anything</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./imagenes/banner3.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <h5 class="fw-bold">Proyecto #3</h5>
+                                    <p>Best fitness center for you</p>
+                                </div>
+                            </div>
+
+
+                            <div class="carousel-item">
+                                <img src="./imagenes/banner4.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption">
+                                    <h5 class="fw-bold">Proyecto #4</h5>
+                                    <p>NYC Digital Conference </p>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <!-- Proyecto1 -->
+    <section class="contenedor__s1 pt-5" id="seccion1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <img src="./imagenes/logoproyecto1.svg" alt="" title="" class="mt-4 mb-4 logosize">
+
+                    <nav style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"
+                                    class="text-primary fw-bolder text-decoration-none">Proyecto #1</a>
+                            </li>
+                            <li class="breadcrumb-item active small text-light" aria-current="page">Product</li>
+                            <li class="breadcrumb-item active small text-light" aria-current="page">Features</li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+
+
+            <div class="row s1row1 mb-5">
+                <div class="col-lg-6 s1row1__lado1">
+                    <div class="s1row1lado1__texto h-100">
+
+                        <h2 class="display-3 text-light fw-light">
+                            Professional Corporate Langing Page for <span class="fw-bold">Business</span>
+                        </h2>
+
+                        <p class="lead text-light fw-light opacity-50">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptas laudantium quidem
+                            velit cum dolorum totam sapiente, iure officia ex?
+                        </p>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 s1row1__lado2 p-5 ">
+
+                    <div class="s1row1lado2__texto h-100 ">
+
+                        <form action="" method="post" class="p-5 bg-white rounded-2">
+
+                            <h4 class="text-center text-dark fw-bold">Get 30 day FREE trial</h4>
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control bg-light border-0" id="floatingInput"
+                                    placeholder="First Name" required="Yes">
+                                <label for="floatingInput" class="small opacity-50">First Name</label>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control bg-light border-0" id="floatingInput"
+                                    placeholder="Last Name" required="Yes">
+                                <label for="floatingInput" class="small opacity-50">Last Name</label>
+                            </div>
+
+
+                            <div class="form-floating mb-3">
+                                <input type="email" class="form-control bg-light border-0" id="floatingInput"
+                                    placeholder="name@example.com" required="Yes">
+                                <label for="floatingInput" class="small opacity-50">Email address</label>
+                            </div>
+
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-dark w-100">Sign in</button>
+                            </div>
+
+                        </form>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row s1row2 bg-light h-100 py-5">
+
+                <h3 class="text-capitalize display-6 text-center mb-3">
+                    The features that <span class="fw-bold">we present</span>
+                </h3>
+
+                <p class="text-center">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic recusandae eaque neque deserunt
+                    optio. Nihil ratione amet nobis quidem provident. Deserunt, labore. At, sapiente error?
+                </p>
+
+
+                <div class="col-lg-6 s1row2__lado1">
+                    <div class="s1row2lado1__texto h-100 px-5 py-5">
+                        <h4 class="text-start mb-3">We love make things <span class="fw-bold">amazing and simple</span>
+                        </h4>
+
+                        <ol class="list-group small">
+                            <li class="list-group-item d-flex justify-content-between align-items-start border-0">
+
+                                <i class="bi bi-person-fill text-primary fs-2 me-2"></i>
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold fs-5">Website Performance</div>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam.
+                                    Sunt ab voluptatibus neque soluta impedit autem?
+                                </div>
+
+                            </li>
+
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-start border-0 bg-light">
+
+                                <i class="bi bi-graph-up-arrow text-primary fs-2 me-2"></i>
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold fs-5">Marketing Performance</div>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam.
+                                    Sunt ab voluptatibus neque soluta impedit autem?
+                                </div>
+
+                            </li>
+
+
+                            <li
+                                class="list-group-item d-flex justify-content-between align-items-start border-0 bg-light">
+
+                                <i class="bi bi-rocket-takeoff-fill text-primary fs-2 me-2"></i>
+                                <div class="ms-2 me-auto">
+                                    <div class="fw-bold fs-5">SEP Performance</div>
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, dignissimos ullam.
+                                    Sunt ab voluptatibus neque soluta impedit autem?
+                                </div>
+                            </li>
+
+
+
+                        </ol>
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 s1row2__lado2">
+                    <div class="s1row2lado2__imagen h-100">
+
+                        <figure class="figure">
+                            <img src="./imagenes/seccion1.jpg" class="figure-img img-fluid rounded p-5" alt="...">
+                            <figcaption class="figure-caption text-center">Cras sollicitudin rutrum orci, eu
+                                condimentum.
+                            </figcaption>
+                        </figure>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+            <div class="row s1row3 bg-dark h-100 py-5">
+
+                <div class="col-sm col-md-3 col-lg-3 s1row3__cifras">
+
+                    <div class="cifras__grupo">
+
+                        <article class="grupo text-white text-center">
+
+                            <i class="bi bi-emoji-smile-fill display-5"></i>
+                            <h4 class="display-6 fw-bold">
+                                328
+                            </h4>
+                            <p class="small text-light fw-light opacity-50">
+                                Happy Customers
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm col-md-3 col-lg-3 s1row3__cifras">
+
+                    <div class="cifras__grupo">
+
+                        <article class="grupo text-white text-center">
+                            <i class="bi bi-lightbulb-fill display-5"></i>
+                            <h4 class="display-6 fw-bold">
+                                285
+                            </h4>
+                            <p class="small text-light fw-light opacity-50">
+                                Issues Solved
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-sm col-md-3 col-lg-3 s1row3__cifras">
+
+                    <div class="cifras__grupo">
+
+                        <article class="grupo text-white text-center">
+
+                            <i class="bi bi-search display-5"></i>
+                            <h4 class="display-6 fw-bold">
+                                159
+                            </h4>
+                            <p class="small text-light fw-light opacity-50">
+                                Good Reviews </p>
+                        </article>
+
+                    </div>
+                </div>
+
+
+                <div class="col-sm col-md-3 col-lg-3 s1row3__cifras">
+
+                    <div class="cifras__grupo">
+
+                        <article class="grupo text-white text-center">
+                            <i class="bi bi-briefcase-fill display-5"></i>
+                            <h4 class="display-6 fw-bold">
+                                128
+                            </h4>
+                            <p class="small text-light fw-light opacity-50">
+                                Case Studies
+                            </p>
+                        </article>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            <div class="row s1row4 text-white h-100 py-5">
+                <h3 class="text-capitalize display-6 text-center mb-3">
+                    The services that <span class="fw-bold">we introduce</span>
+                </h3>
+
+                <p class="text-center opacity-50">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic recusandae eaque neque deserunt
+                    optio. Nihil ratione amet nobis quidem provident. Deserunt, labore. At, sapiente error?
+                </p>
+
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto text-center">
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body">
+                                <i class="bi bi-person-fill text-primary fs-2"></i>
+                                <h5 class="card-title fw-bold">Website Performance</h5>
+                                <p class="card-text small">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum necessitatibus rerum
+                                    ipsa quaerat et eius minima in praesentium.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-primary text-capitalize">
+                                    <a href="#" class="link-underline link-underline-opacity-0">read more</a>
+                                    <i class="bi bi-arrow-right-short">
+                                    </i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body">
+                                <i class="bi bi-graph-up-arrow text-primary fs-2"></i>
+                                <h5 class="card-title fw-bold">Marketing Performance</h5>
+                                <p class="card-text small">
+                                    This card has supporting text below as a natural lead-in to
+                                    additional content.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-primary text-capitalize">
+                                    <a href="#" class="link-underline link-underline-opacity-0">read more</a>
+                                    <i class="bi bi-arrow-right-short">
+                                    </i>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body">
+                                <i class="bi bi-rocket-takeoff-fill text-primary fs-2"></i>
+                                <h5 class="card-title fw-bold">SEO Performance</h5>
+                                <p class="card-text small">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum necessitatibus rerum
+                                    ipsa quaerat et eius minima in praesentium.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-primary text-capitalize">
+                                    <a href="#" class="link-underline link-underline-opacity-0">read more</a>
+                                    <i class="bi bi-arrow-right-short">
+                                    </i>
+                                </small>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </section>
+
+
+    <!-- Proyecto2 -->
+    <section class="contenedor__s2 pt-5" id="seccion2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <img src="./imagenes/logoproyecto2.svg" alt="" title="" class="mt-4 mb-4 logosize">
+
+                    <nav style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"
+                                    class="text-success fw-bolder text-decoration-none">Proyecto #2</a>
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">Product
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">Features
+                            </li>
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+
+
+            <div class="row s2row1 mb-5">
+
+                <div class="col-lg-6 s2row1__lado1">
+                    <div class="s2row1lado1__texto h-100">
+
+                        <h2 class="display-3 text-light fw-light">
+                            Welcome to <span class="fw-bold text-success opacity-50">Onekit</span> Develop anything
+
+                        </h2>
+
+                        <p class="lead text-light fw-light opacity-50">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad voluptas laudantium quidem
+                            velit cum dolorum totam sapiente, iure officia ex?
+                        </p>
+
+                        <div class="s2row1__grupobotones">
+                            <button type="button" class="btn btn-success w-25">View all pages <i
+                                    class="bi bi-arrow-right ms-2"></i></button>
+                            <button type="button" class="btn btn-outline-success w-25">Documentation</button>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
+                <div class="col-lg-6 s2row1__lado2 p-5 ">
+                    <div class="s2row1lado2__texto h-100 ">
+
+                        <figure class="figure">
+                            <img src="./imagenes/seccion2-1.jpg"
+                                class="figure-img img-fluid rounded rounded-start-pill p-5" alt="...">
+                            <figcaption class="figure-caption text-center text-light opacity-50">Cras sollicitudin
+                                rutrum orci, eu
+                                condimentum.
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="row s2row2 text-white h-100 pt-0 pb-5">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto text-start">
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body">
+                                <i class="bi bi-database-fill-gear text-success fs-2"></i>
+                                <h5 class="card-title">Built for developers</h5>
+                                <p class="card-text small opacity-50">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum necessitatibus rerum
+                                    ipsa quaerat et eius minima in praesentium.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body">
+                                <i class="bi bi-image-fill text-success fs-2"></i>
+                                <h5 class="card-title"> Designed to be modern</h5>
+                                <p class="card-text small opacity-50">
+                                    This card has supporting text below as a natural lead-in to
+                                    additional content.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100">
+
+                            <div class="card-body">
+                                <i class="bi bi-code-slash text-success fs-2"></i>
+                                <h5 class="card-title">Documentation for everything</h5>
+                                <p class="card-text small opacity-50">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum necessitatibus rerum
+                                    ipsa quaerat et eius minima in praesentium.
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="row s2row3 h-100 p-5 bg-black my-5">
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion2-3.png" alt="" class="img-fluid border-0">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion2-4.png" alt="" class="img-fluid border-0">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion2-5.png" alt="" class="img-fluid border-0">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion2-6.png" alt="" class="img-fluid border-0">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion2-7.png" alt="" class="img-fluid border-0">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion2-8.png" alt="" class="img-fluid border-0">
+                </div>
+            </div>
+
+
+            <div class="row s2row4 h-100 p-5 mt-5">
+
+                <div class="col-12 col-md-6 col-lg-5 s2row4__lado1">
+
+                    <div class="card border-0" style="width: 20rem; margin: 0 auto;">
+                        <img src="./imagenes/seccion2-1.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+
+                            <form action="" method="post" class="p-0 bg-white rounded-2">
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control bg-light border-0" id="floatingInput"
+                                        placeholder="First Name" required="Yes">
+                                    <label for="floatingInput" class="small opacity-50">First Name</label>
+                                </div>
+
+
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control bg-light border-0" id="floatingInput"
+                                        placeholder="Last Name" required="Yes">
+                                    <label for="floatingInput" class="small opacity-50">Last Name</label>
+                                </div>
+
+
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control bg-light border-0" id="floatingInput"
+                                        placeholder="name@example.com" required="Yes">
+                                    <label for="floatingInput" class="small opacity-50">Email
+                                        address</label>
+                                </div>
+
+
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-success w-100">Sign in</button>
+                                </div>
+
+                            </form>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div class="col-12 col-md-6 col-lg-7 s2row4__lado2">
+
+                    <div class="s2row4lado2__texto h-100">
+
+                        <h4 class="display-6 text-light fw-light">
+                            The most useful resource <span class="text-success opacity-50">ever created for
+                                designers.</span>
+
+
+                        </h4>
+
+                        <p class="lead text-light fw-light opacity-50">
+                            Using Landkit to build your site means never worrying about designing another page or cross
+                            browser compatibility. Our ever-growing library of components and pre-designed layouts will
+                            make your life easier.
+                        </p>
+
+
+                        <div class="row">
+                            <div class="col-12 col-lg-6">
+
+                                <!-- Item -->
+                                <div class="d-flex">
+
+                                    <!-- Check -->
+                                    <div class="badge badge-rounded-circle text-bg-success-subtle me-1">
+                                        <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <p class="text-success">
+                                        Lifetime updates
+                                    </p>
+
+                                </div>
+
+                                <!-- Item -->
+                                <div class="d-flex">
+
+                                    <!-- Check -->
+                                    <div class="badge badge-rounded-circle text-bg-success-subtle me-1">
+                                        <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                    </div>
+
+                                    <p class="text-success mb-lg-0">
+                                        Tons of assets
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                            <div class="col-12 col-lg-6 mb-6 mb-md-0">
+
+                                <!-- Item -->
+                                <div class="d-flex">
+
+                                    <!-- Check -->
+                                    <span class="badge badge-rounded-circle text-bg-success-subtle me-1">
+                                        <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                    </span>
+
+                                    <!-- Text -->
+                                    <p class="text-success">
+                                        Tech support
+                                    </p>
+
+                                </div>
+
+                                <!-- Item -->
+                                <div class="d-flex">
+
+                                    <!-- Check -->
+                                    <div class="badge badge-rounded-circle text-bg-success-subtle me-1">
+                                        <i class="bi bi-check-circle-fill fs-5 text-success"></i>
+                                    </div>
+
+                                    <!-- Text -->
+                                    <p class="text-success mb-0">
+                                        Integration ready
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+    </section>
+
+
+    <!-- Proyecto3 -->
+    <section class="contenedor__s3 pt-5 pb-5" id="seccion3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <img src="./imagenes/logoproyecto3.svg" alt="" title="" class="mt-4 mb-4 logosize">
+
+                    <nav style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"
+                                    class="text-warning fw-bolder text-decoration-none">Proyecto #3</a>
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">Home
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">About
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">Classes
+                            </li>
+
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+
+            <div class="row s3row1 mb-5">
+
+                <div class="col-lg-6 s3row1__lado1">
+                    <div class="s3row1lado1__texto h-100">
+
+                        <h2 class="display-3 text-light fw-light">
+                            <span class="fw-bold">Best fitness</span> center for you
+
+                        </h2>
+
+                        <p class="lead text-light fw-light opacity-50">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati consectetur beatae totam
+                            id ea, tempora labore minus ad exercitationem iste rerum accusamus nisi. Quis, illum.
+                        </p>
+
+
+                        <div class="s3row1__grupobotones">
+                            <button type="button" class="btn btn-warning">Get Started <i
+                                    class="bi bi-arrow-right ms-2 w-25"></i></button>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="col-lg-6 s3row1__lado2 p-5 ">
+
+                    <div class="s3row1lado2__texto h-100 ">
+
+                        <figure class="figure">
+                            <img src="./imagenes/seccion3-2.png"
+                                class="figure-img img-fluid rounded rounded-start-pill p-5" alt="...">
+                            <figcaption class="figure-caption text-center text-light opacity-50">Cras sollicitudin
+                                rutrum orci, eu
+                                condimentum.
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="row s3row2 mb-5">
+                <div class="col-lg-6 s3row2__lado1">
+
+                    <div class="s3row2lado1__imagen h-100 ">
+
+                        <figure class="figure">
+                            <img src="./imagenes/seccion3-3.jpg"
+                                class="figure-img img-fluid rounded rounded-end-circle p-5" alt="...">
+                            <figcaption class="figure-caption text-center text-light opacity-50">Cras sollicitudin
+                                rutrum orci, eu
+                                condimentum.
+                            </figcaption>
+                        </figure>
+
+                    </div>
+
+                </div>
+
+
+                <div class="col-lg-6 s3row2__lado2">
+                    <div class="s2row2lado2__texto h-100">
+
+                        <h5 class="text-warning opacity-50">
+                            About Us <i class="bi bi-arrow-right ms-2"></i>
+                        </h5>
+
+                        <h4 class="display-6 text-light fw-light">
+                            Welcome to our <span class="text-warning opacity-50">gym</span>
+                        </h4>
+
+                        <p class="lead text-light fw-light opacity-50">
+                            Pellentesque lacinia urna ac eleifend semper. Sed pulvinar aliquet libero at suscipit.
+                            Quisque a tellus et ante
+                            cursus gravida vulputate eget diam. Fusce nec arcu eros. Curabitur vehicula lacus sit amet
+                            mauris blandit
+                            aliquet. Praesent condimentum vestibulum arcu, nec mattis ligula sollicitudin in. Sed et
+                            tempor mauris. Mauris
+                            quis est tellus.
+                        </p>
+
+                        <p class="lead text-light fw-light opacity-50">
+                            Aenean lobortis fermentum dui a accumsan. Aenean ut ipsum cursus, eleifend turpis in,
+                            dapibus nisl. Suspendisse ut
+                            sodales magna. Donec gravida aliquet velit sit amet luctus. Donec laoreet sem mi, ut
+                            sollicitudin urna molestie non. Sed
+                            et enim ex. Phasellus imperdiet tincidunt sem, porta venenatis magna mollis quis. Etiam ac
+                            diam sit amet velit mollis
+                            tincidunt non non erat.
+                        </p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row s3row4 mb-5">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 mx-auto">
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="./imagenes/seccion3-5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <h5 class="card-title fw-bold"> <i class="fa-solid fa-dumbbell fa-sm"
+                                        style="color: #b64e07; padding-right: 0.5rem;"></i>Power yoga classes</h5>
+                                <p class="card-text small opacity-50">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae nihil
+                                    voluptatum suscipit voluptatibus non assumenda optio, nobis iusto deserunt.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"> <i class="fa-solid fa-calendar-days fa-lg"
+                                        style="color: #b64e07; padding-right: 0.5rem;"></i>23 June</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="../imagenes/seccion3-6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"> <i class="fa-solid fa-spa fa-sm"
+                                        style="color: #b64e07; padding-right: 0.5rem;"></i>Weight Lifting Classes</h5>
+                                <p class="card-text small opacity-50">
+                                    This card has supporting text below as a natural lead-in to
+                                    additional content.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"> <i class="fa-solid fa-calendar-days fa-lg"
+                                        style="color: #b64e07; padding-right: 0.5rem;"></i>23 December</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0">
+                            <img src="../imagenes/seccion3-7.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title fw-bold"> <i class="fa-solid fa-heart-pulse fa-sm"
+                                        style="color: #b64e07; padding-right: 0.5rem;"></i>Cardio & Strenght Classes
+                                </h5>
+                                <p class="card-text small opacity-50">
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum molestiae nihil
+                                    voluptatum suscipit voluptatibus non assumenda optio, nobis iusto deserunt.
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary"> <i class="fa-solid fa-calendar-days fa-lg"
+                                        style="color: #b64e07; padding-right: 0.5rem;"></i>07 August</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- Proyecto4 -->
+    <section class="contenedor__s4 pt-5 pb-5" id="seccion4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <img src="./imagenes/logoproyecto4.svg" alt="" title="" class="mt-4 mb-4 logosize">
+
+                    <nav style="--bs-breadcrumb-divider: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&quot;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#"
+                                    class="text-info fw-bolder text-decoration-none">Proyecto #3</a>
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">Home
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">Services
+                            </li>
+                            <li class="breadcrumb-item active small text-light opacity-50" aria-current="page">Features
+                            </li>
+
+                        </ol>
+                    </nav>
+
+                </div>
+            </div>
+
+
+
+            <div class="row s4row1 mb-5">
+
+                <div class="col-lg-6 s4row1__lado1">
+
+                    <div class="s4row1lado1__imagen h-100 ">
+
+                        <figure class="figure">
+                            <img src="./imagenes/seccion4-1.jpg" class="figure-img img-fluid rounded" alt="...">
+
+                        </figure>
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="col-lg-6 s4row1__lado2">
+                    <div class="s4row1lado2__texto h-100">
+
+                        <h5 class="text-info opacity-50">
+                            07-05, 2025 <i class="bi bi-calendar3 ms-2"></i>
+
+                        </h5>
+
+                        <h2 class="display-3 text-light fw-light">
+                            <span class="fw-bold">NYC Digital</span> <br>Conference
+
+                        </h2>
+
+                        <p class="lead text-white-50 fw-light">
+                            <i class="bi bi-person-fill"></i> International Convention Centre, NeW York, USA
+                        </p>
+
+
+
+                        <div class="s4row1__grupobotones">
+                            <button type="button" class="btn btn-info w-25">View Schedule <i
+                                    class="bi bi-binoculars-fill ms-2 "></i></button>
+                            <button type="button" class="btn btn-outline-info w-25">Buy Ticket <i
+                                    class="bi bi-ticket-perforated ms-2"></i></button>
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+
+            <div class="row s4row2 h-100 p-5 bg-black my-5">
+
+                <h5 class="text-info opacity-50 text-center mb-4">
+                    Sponsored by:
+                </h5>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion4-2.png" alt="" class="img-fluid border-0 opacity-25">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion4-3.png" alt="" class="img-fluid border-0 opacity-25">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion4-4.png" alt="" class="img-fluid border-0 opacity-25">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion4-5.png" alt="" class="img-fluid border-0 opacity-25">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion4-6.png" alt="" class="img-fluid border-0 opacity-25">
+                </div>
+
+                <div class="col-md-2">
+                    <img src="./imagenes/seccion4-7.png" alt="" class="img-fluid border-0 opacity-25">
+                </div>
+            </div>
+
+
+
+            <div class="row s4row3 h-100 p-5 my-5">
+                <h4 class="display-6 text-white-50  fw-light text-center">
+                    World-Class Speakers
+                </h4>
+
+
+                <div class="row row-cols-1 row-cols-md-4 g-4 mx-auto">
+                    <div class="col">
+                        <div class="card h-100 border-0 text-center">
+                            <img src="./imagenes/speaker-1.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+
+                                <h6 class="card-title fw-semibold">
+                                    Werner von Haeften
+                                </h6>
+                                <p class="card-text small opacity-50">
+                                    Founder & CEO, Elastic
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">
+
+                                    <i class="fa-brands fa-facebook-f me-2 text-info fs-5"></i>
+                                    <i class="bi bi-twitter me-2 text-info fs-5"></i>
+                                    <i class="bi bi-envelope-fill me-2 text-info fs-5"></i>
+                                    <i class="bi bi-whatsapp text-info fs-5"></i>
+
+                                </small>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 text-center">
+                            <img src="./imagenes/speaker-2.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title fw-semibold">
+                                    Ria von Falkenhausen
+                                </h6>
+                                <p class="card-text small opacity-50">
+                                    CEO, Beauty Trends
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">
+
+                                    <i class="fa-brands fa-facebook-f me-2 text-info fs-5"></i>
+                                    <i class="bi bi-twitter me-2 text-info fs-5"></i>
+                                    <i class="bi bi-envelope-fill me-2 text-info fs-5"></i>
+                                    <i class="bi bi-whatsapp text-info fs-5"></i>
+
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card h-100 border-0 text-center">
+                            <img src="./imagenes/speaker-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title fw-semibold">
+                                    Lia Bürresheim
+                                </h6>
+                                <p class="card-text small opacity-50">
+                                    Founder, Amazing App
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">
+
+                                    <i class="fa-brands fa-facebook-f me-2 text-info fs-5"></i>
+                                    <i class="bi bi-twitter me-2 text-info fs-5"></i>
+                                    <i class="bi bi-envelope-fill me-2 text-info fs-5"></i>
+                                    <i class="bi bi-whatsapp text-info fs-5"></i>
+
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="col">
+                        <div class="card h-100 border-0 text-center">
+                            <img src="./imagenes/speaker-4.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h6 class="card-title fw-semibold">
+                                    Kia von Gersdorff
+                                </h6>
+                                <p class="card-text small opacity-50">
+                                    CEO, Monn Chef
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">
+
+                                    <i class="fa-brands fa-facebook-f me-2 text-info fs-5"></i>
+                                    <i class="bi bi-twitter me-2 text-info fs-5"></i>
+                                    <i class="bi bi-envelope-fill me-2 text-info fs-5"></i>
+                                    <i class="bi bi-whatsapp text-info fs-5"></i>
+
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="row s4row4 h-100 p-5 my-5 bg-white">
+
+                <h4 class="display-6 text-dark fw-bold text-center mb-5">
+                    Schedule
+                </h4>
+
+                <div class="row mx-auto">
+                    <div class="col-md-3">
+                        <p class="lead fw-bold">9:30 - 10:30am</p>
+                        <p class="text-muted opacity-50">October 14th</p>
+                        <span class="badge text-bg-success">Panel #1</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="fw-semibold">Openinig party &amp; early registration</h4>
+                        <p class="text-muted mt-3">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus quas totam quia nobis illum
+                            facere
+                            recusandae eos! Enim ab error nobis similique, voluptatibus modi.
+                        </p>
+                    </div>
+                </div>
+
+                <hr class="my-4 text-black-50">
+
+                <div class="row mx-auto">
+                    <div class="col-md-3">
+                        <p class="lead fw-bold">10:30 – 11:30 am</p>
+                        <p class="text-muted opacity-50">October 14th</p>
+                        <span class="badge text-bg-danger">Panel #2</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="fw-semibold">
+                            Product strategy: Defining your strategy, tactics, metrics & roadmap
+                        </h4>
+                        <p class="text-muted mt-3">
+                            Pellentesque rhoncus viverra vestibulum, purus purus quisque quisque sed. Cras vestibulum
+                            facilisis dictumst consequat. In bibendum diam nunc dignissim magna morbi mattis.
+                        </p>
+                    </div>
+                </div>
+
+
+
+                <hr class="my-4 text-black-50">
+
+                <div class="row mx-auto">
+                    <div class="col-md-3">
+                        <p class="lead fw-bold">11:30 am – 13:00 pm</p>
+                        <p class="text-muted opacity-50">October 14th</p>
+                        <span class="badge text-bg-warning">Panel #3</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="fw-semibold">
+                            Workshop: Top trends and predictions for content that will dominate next year
+                        </h4>
+                        <p class="text-muted mt-3">
+                            Nec, malesuada quisque lorem id amet posuere. Risus, elit, vel pharetra ac, dictum lorem
+                            nisl morbi. Lorem dui id aliquam eu feugiat arcu diam.
+                        </p>
+                    </div>
+                </div>
+
+
+
+
+                <hr class="my-4 text-black-50">
+
+                <div class="row mx-auto">
+                    <div class="col-md-3">
+                        <p class="lead fw-bold">13:00 – 14:00 pm</p>
+                        <p class="text-muted opacity-50">October 14th</p>
+                        <span class="badge text-bg-info">Panel #4</span>
+                    </div>
+                    <div class="col-md-9">
+                        <h4 class="fw-semibold">
+                            Interlude: attendee dinner
+                        </h4>
+                        <p class="text-muted mt-3">
+                            Volutpat aliquam quam eget sit. Aliquam dui pellentesque egestas duis amet malesuada eget.
+                            Ut faucibus dignissim maecenas dui tristique vestibulum facilisis dictumst consequat.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- Iconos Bootstrap CDN -->
+    <!-- CDN -->
+    <!-- recomendable -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+
+
+
+    <!-- Otras funcionalidades -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
+    </script>
+
+
+    <!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+    </script>
+    -->
+
+
+
+</body>
+
+</html>
